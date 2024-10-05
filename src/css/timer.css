@@ -1,0 +1,93 @@
+/* 
+.container-timer{
+    padding: 0 156px 32px;
+    max-width: 1440px;
+
+}
+.data-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 36px;
+    outline: none;
+    margin-bottom: 32px;
+    
+    
+    
+}
+
+
+input{
+    border-radius: 4px;
+    width: 272px;
+    box-shadow: none; 
+    
+
+}
+    
+.data-input button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #cfcfcf;
+    color: #989898;
+    border-radius: 4px;
+    cursor: pointer;   
+
+}
+.timer{
+    display: flex;
+    gap: 24px;
+    
+    
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+.container-timer {
+    padding: 0 156px 32px;
+    max-width: 1440px;
+    margin: 0 auto; /* Центрування контейнера */
+}
+
+.data-input {
+    display: flex;
+    gap: 8px;
+    margin-top: 36px;
+    margin-bottom: 32px;
+    outline: none;
+}
+
+.data-input input {
+    flex-grow: 1; /* Займає всю доступну ширину в контейнері */
+    border-radius: 4px;
+    padding: 8px; /* Додаємо внутрішні відступи */
+    box-shadow: none; /* Прибирає тінь */
+    border: 1px solid #ccc; /* Додає обведення для інпуту */
+}
+
+.data-input button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #cfcfcf;
+    color: #989898;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Додає плавний ефект зміни кольору */
+}
+
+.data-input button:hover {
+    background-color: #bfbfbf; /* Додаємо ефект при наведенні */
+}
+
+.timer {
+    display: flex;
+    gap: 24px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнювання тексту по центру */
+}
