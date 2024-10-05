@@ -18,7 +18,7 @@ flatpickr("#datetime-picker", {
     if (userSelectedDate < new Date()) {
       iziToast.show({
         title: `<img src="${icon}" alt="icon" width="20" height="20" />`,
-        message: "Error Illegal operation",
+        message: "Please choose a date in the future",
         color: "#FF0000",
         messageColor: "#FFFFFF", 
         position: "topRight", 
