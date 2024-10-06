@@ -26,26 +26,26 @@ form.addEventListener('submit', event => {
   makePromise(delay, shouldResolve)
     .then(delay => {
       iziToast.show({
-        title: "Success",
+        title: "✅ ",
         titleColor: "#FFFFFF",
-        message: `✅ Fulfilled promise in ${delay}ms`,
+        message: `Fulfilled promise in ${delay}ms`,
         color: "#0bd54b",
         messageColor: "#FFFFFF",
         position: "topRight",
         timeout: 3000,
       });
-      console.log(`✅ Fulfilled promise in ${delay}ms`);
+      
     })
     .catch(delay => {
       iziToast.show({
-        title: "Error",
+        title: "❌",
         titleColor: "#FFFFFF",
-        message: `❌ Rejected promise in ${delay}ms`,
-        color: "#FF0000",
+        message: ` Rejected promise in ${delay}ms`,
+        color: "#FF6347",
         messageColor: "#FFFFFF",
         position: "topRight",
         timeout: 3000,
       });
-      console.log(`❌ Rejected promise in ${delay}ms`);
+    
     });
 });
